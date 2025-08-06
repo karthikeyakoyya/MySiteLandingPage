@@ -1,48 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MySite Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">My<span>Site</span></div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city or allow location">
+        <button onclick="getWeather()">Search</button>
 
-  <section id="home" class="section reveal">
-    <h1>Welcome to <span>MySite</span></h1>
-    <p>Scroll down to explore more</p>
-  </section>
+        <!-- Message box for user feedback (loading, errors, instructions) -->
+        <div id="message-box" class="message"></div>
 
-  <section id="about" class="section reveal glass">
-    <h2>About Us</h2>
-    <p>We create stunning and performant web experiences.</p>
-  </section>
+        <img id="weather-icon" alt="Weather Icon">
 
-  <section id="services" class="section reveal glass">
-    <h2>Services</h2>
-    <p>Web Development, SEO, UI/UX Design, Branding and more.</p>
-  </section>
+        <div id="temp-div"></div>
 
-  <section id="contact" class="section reveal glass">
-    <h2>Contact Us</h2>
-    <p>Email: support@mysite.com | Phone: +91-9876543210</p>
-  </section>
+        <div id="weather-info"></div>
 
-  <footer>
-    <p>&copy; 2025 MySite. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+        <div id="hourly-forecast"></div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
