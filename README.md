@@ -1,1 +1,1 @@
-https://github.com/karthikeyakoyya/MySiteLandingPage.git- to access the website
+https://karthikeyakoyya.github.io/MySiteLandingPage/- to access the website
